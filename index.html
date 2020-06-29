@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NOAH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My First PWA">
+    <meta name="theme-color" content="#fafafa"/>
+    <link rel="shortcut icon" href="icon-big.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="manifest" href="/manifest.json">
+    <style>
+        p {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+    </style>
+</head>
+<body>
+    <!-- *Navigasi -->
+    <nav class="grey lighten-5" role="navigation">
+        <div class="nav-wrapper container">
+            <a class="brand-logo" id="logo-container"><img src="img/logo-noah.png" alt="" style="width: 110px;"></a>
+            <a href="#" class="sidenav-trigger grey-text text-darken-4" data-target="nav-mobile"><h5>☰</h5></a>
+
+            <ul class="topnav right hide-on-med-and-down"></ul>
+            <ul class="sidenav" id="nav-mobile"></ul>
+        </div>
+    </nav>
+    <!-- *Akhir Navigasi -->
+
+    <!-- *Konten -->
+    <div class="container" id="body-content"></div>
+    <!-- *Konten -->
+
+    <script src="js/materialize.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script>
+        // REGISTER SERVICE WORKER
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function() {
+            navigator.serviceWorker
+                .register("/service-worker.js")
+                .then(function() {
+                    console.log("Pendaftaran ServiceWorker berhasil");
+                })
+                .catch(function() {
+                    console.log("Pendaftaran ServiceWorker gagal");
+                });
+            });
+        } else {
+            console.log("ServiceWorker belum didukung browser ini.");
+        }
+    </script>
+</body>
+</html>

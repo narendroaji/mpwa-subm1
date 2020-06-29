@@ -1,0 +1,21 @@
+{
+    "name": "NOAH Site",
+    "short_name": "NOAH",
+    "description": "Submission 1 Membangun Progressive Web Apps Dicoding",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#fafafa",
+    "theme_color": "#fafafa",
+    "icons": [
+        {
+            "src": "icon-small.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icon-big.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
