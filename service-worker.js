@@ -1,4 +1,4 @@
-const CACHE_NAME = "submission-1rev0";
+const CACHE_NAME = "submission-1rev1";
 var urlsToCache = [
     "/",
     "icon-big.png",
@@ -10,8 +10,10 @@ var urlsToCache = [
     "/pages/diskografi.html",
     "/pages/pendahuluan.html",
     "/css/materialize.min.css",
+    "/css/style.css",
     "/js/materialize.min.js",
     "/js/nav.js",
+    "/js/register-sw.js",
     "/manifest.json",
     "img/album/alexandria.jpg",
     "img/personil/ariel.jpeg",
