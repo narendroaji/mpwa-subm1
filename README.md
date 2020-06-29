@@ -1,2 +1,2 @@
 ## Description:
-NOAH Site implementing Progressive Web Apps.
+NOAH Site implementing Progressive Web App.
