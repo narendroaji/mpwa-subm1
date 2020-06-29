@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     // !Load page content
     let page = window.location.hash.substr(1);
-    if (page == "") page = "pendahuluan";
+    if (page === "") page = "pendahuluan";
     loadPage(page);
     
     function loadPage(page) {
